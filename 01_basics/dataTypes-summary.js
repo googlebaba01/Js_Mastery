@@ -35,3 +35,40 @@ console.log(myFunc);
 // 7) The data type of BigInt is BigInt.
 // And the Data Types of Non primitive data type is Function object.
 
+// ********************************************************
+// Memory and Threads 
+// two types of memory 
+// 1.satck memory(pass value) 2. heap memory (pass referance)
+
+//  example of pass by value -> satck
+
+let Name = "Gaurav"
+let AnotherName = Name
+AnotherName = "sahil"
+
+console.log(AnotherName); // -> sahil
+console.log(Name); // -> Gaurav coz change in copy not in main item
+
+// examlpe pass by referance -> heap 
+
+let userOne = {
+    name:"Gaurav",
+    email:"gaurav@google.com",
+    upi:"gaurav@paytm"
+}
+
+let userTwo  = userOne
+userTwo.email = "rahul@gmail.com"
+
+console.log(userOne.email); // -> rahul@gmail.com
+console.log(userTwo.email); // -> rahul@gmail.com" pass by referance 
+
+
+
+
+
+
+
+
+
+
